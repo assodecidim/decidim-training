@@ -17,6 +17,7 @@ gem "sidekiq", "~> 7.3"
 
 gem "sentry-ruby", "~> 5.23"
 gem "sentry-rails", "~> 5.23"
+gem "sentry-sidekiq", "~> 5.23"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
