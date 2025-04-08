@@ -11,10 +11,9 @@ gem "decidim", "0.29.2"
 # gem "decidim-templates", "0.29.2"
 
 gem "bootsnap", "~> 1.3"
-
 gem "puma", ">= 6.3.1"
-
 gem "wicked_pdf", "~> 2.1"
+gem "sidekiq", "~> 7.3"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
