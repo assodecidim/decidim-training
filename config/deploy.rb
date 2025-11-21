@@ -16,7 +16,7 @@ after "deploy:finishing", "restart_sidekiq"
 
 task :restart_sidekiq do
   on roles(:app), in: :sequence, wait: 5 do
-    execute "systemctl restart sidekiq"
+    execute "sudo systemctl restart sidekiq"
   end
 end
 
