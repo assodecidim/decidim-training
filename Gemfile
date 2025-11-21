@@ -34,7 +34,7 @@ group :development do
   gem "web-console", "~> 4.2"
 
   gem "capistrano", "~> 3.19"
-  gem "capistrano-npm", "~> 1.0"
+  gem "capistrano-nvm", "~> 0.0.7"
   gem "capistrano-rails", "~> 1.7"
   gem "capistrano-rbenv", "~> 2.2"
   gem "capistrano-passenger", "~> 0.2.1"
