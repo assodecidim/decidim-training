@@ -4,11 +4,13 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", "0.29.2"
-gem "decidim-conferences", "0.29.2"
-gem "decidim-design", "0.29.2"
-gem "decidim-initiatives", "0.29.2"
-gem "decidim-templates", "0.29.2"
+DECIDIM_VERSION = "0.30.0"
+
+gem "decidim", DECIDIM_VERSION
+gem "decidim-conferences", DECIDIM_VERSION
+gem "decidim-design", DECIDIM_VERSION
+gem "decidim-initiatives", DECIDIM_VERSION
+gem "decidim-templates", DECIDIM_VERSION
 
 gem "bootsnap", "~> 1.3"
 gem "puma", ">= 6.3.1"
@@ -23,10 +25,7 @@ group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
   gem "brakeman", "~> 6.1"
-  gem "decidim-dev", "0.29.2"
-  gem "net-imap", "~> 0.2.3"
-  gem "net-pop", "~> 0.1.1"
-  gem "net-smtp", "~> 0.3.1"
+  gem "decidim-dev", DECIDIM_VERSION
 end
 
 group :development do
