@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = "0.30.0"
+DECIDIM_VERSION = "0.31.0"
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
@@ -40,6 +40,8 @@ group :development do
   gem "capistrano-passenger", "~> 0.2.1"
   gem "ed25519", "~> 1.3"
   gem "bcrypt_pbkdf", "~> 1.1"
+
+  gem "foreman", "~> 0.90.0"
 end
 
 group :production do
