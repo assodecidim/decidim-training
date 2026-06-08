@@ -15,7 +15,7 @@ Bundler.require(*Rails.groups)
 module DecidimTraining
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.2
+    config.load_defaults 8.1
 
     config.hosts << "training.decidim.org"
 

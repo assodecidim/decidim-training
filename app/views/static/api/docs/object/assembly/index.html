@@ -18,15 +18,9 @@
 <h2>
 <a id="fields" class="anchor" href="#fields" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fields</h2>
 <div class="field-entry ">
-  <span id="announcement" class="field-name anchored">announcement (<code><a href="/api/docs/object/translatedfield">TranslatedField</a></code>)</span>
+  <span id="accessmode" class="field-name anchored">accessMode (<code><a href="/api/docs/enum/accessmodeenum">AccessModeEnum!</a></code>)</span>
   <div class="description-wrapper">
-   <p>Highlighted announcement for this assembly</p>
-  </div>
-</div>
-<div class="field-entry ">
-  <span id="bannerimage" class="field-name anchored">bannerImage (<code><a href="/api/docs/scalar/string">String</a></code>)</span>
-  <div class="description-wrapper">
-   <p>The banner image for this assembly</p>
+   <p>The access mode of this assembly (open, transparent, or restricted)</p>
   </div>
 </div>
 <div class="field-entry ">
@@ -132,12 +126,6 @@
   </div>
 </div>
 <div class="field-entry ">
-  <span id="istransparent" class="field-name anchored">isTransparent (<code><a href="/api/docs/scalar/boolean">Boolean</a></code>)</span>
-  <div class="description-wrapper">
-   <p>If this assembly is transparent</p>
-  </div>
-</div>
-<div class="field-entry ">
   <span id="localarea" class="field-name anchored">localArea (<code><a href="/api/docs/object/translatedfield">TranslatedField</a></code>)</span>
   <div class="description-wrapper">
    <p>The organization area of this assembly</p>
@@ -171,12 +159,6 @@
   <span id="participatorystructure" class="field-name anchored">participatoryStructure (<code><a href="/api/docs/object/translatedfield">TranslatedField</a></code>)</span>
   <div class="description-wrapper">
    <p>How it is decided on this assembly</p>
-  </div>
-</div>
-<div class="field-entry ">
-  <span id="privatespace" class="field-name anchored">privateSpace (<code><a href="/api/docs/scalar/boolean">Boolean</a></code>)</span>
-  <div class="description-wrapper">
-   <p>If this assembly is a private space</p>
   </div>
 </div>
 <div class="field-entry ">
@@ -255,6 +237,12 @@
   <span id="youtubehandler" class="field-name anchored">youtubeHandler (<code><a href="/api/docs/scalar/string">String</a></code>)</span>
   <div class="description-wrapper">
    <p>YouTube handler</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="followers" class="field-name anchored">followers (<code><a href="/api/docs/interface/author">[Author]!</a></code>)</span>
+  <div class="description-wrapper">
+   <p>The followers of this resource</p>
   </div>
 </div>
 <div class="field-entry ">
@@ -531,8 +519,29 @@
       
       
       <li>
+        <a href="/api/docs/query/moderatedusers/" class="sidebar-link">
+          moderatedUsers
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/query/moderations/" class="sidebar-link">
+          moderations
+        </a>
+      </li>
+      
+      
+      <li>
         <a href="/api/docs/query/organization/" class="sidebar-link">
           organization
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/query/participantdetails/" class="sidebar-link">
+          participantDetails
         </a>
       </li>
       
@@ -559,20 +568,6 @@
       
       
       <li>
-        <a href="/api/docs/query/participatoryprocesstype/" class="sidebar-link">
-          participatoryProcessType
-        </a>
-      </li>
-      
-      
-      <li>
-        <a href="/api/docs/query/participatoryprocesstypes/" class="sidebar-link">
-          participatoryProcessTypes
-        </a>
-      </li>
-      
-      
-      <li>
         <a href="/api/docs/query/participatoryprocesses/" class="sidebar-link">
           participatoryProcesses
         </a>
@@ -582,6 +577,20 @@
       <li>
         <a href="/api/docs/query/session/" class="sidebar-link">
           session
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/query/staticpagetopics/" class="sidebar-link">
+          staticPageTopics
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/query/staticpages/" class="sidebar-link">
+          staticPages
         </a>
       </li>
       
@@ -666,6 +675,13 @@
       <li>
         <a href="/api/docs/object/attachmentcollection/" class="sidebar-link">
           AttachmentCollection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/api/docs/object/badgescore/" class="sidebar-link">
+          BadgeScore
         </a>
       </li>
       
@@ -797,6 +813,13 @@
       
         
       <li>
+        <a href="/api/docs/object/debatemutation/" class="sidebar-link">
+          DebateMutation
+        </a>
+      </li>
+      
+        
+      <li>
         <a href="/api/docs/object/debates/" class="sidebar-link">
           Debates
         </a>
@@ -804,8 +827,22 @@
       
         
       <li>
+        <a href="/api/docs/object/debatesmutation/" class="sidebar-link">
+          DebatesMutation
+        </a>
+      </li>
+      
+        
+      <li>
         <a href="/api/docs/object/decidim/" class="sidebar-link">
           Decidim
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/api/docs/object/dummyresource/" class="sidebar-link">
+          DummyResource
         </a>
       </li>
       
@@ -881,6 +918,13 @@
       
         
       <li>
+        <a href="/api/docs/object/meetingmutation/" class="sidebar-link">
+          MeetingMutation
+        </a>
+      </li>
+      
+        
+      <li>
         <a href="/api/docs/object/meetingservice/" class="sidebar-link">
           MeetingService
         </a>
@@ -895,8 +939,22 @@
       
         
       <li>
+        <a href="/api/docs/object/meetingsmutation/" class="sidebar-link">
+          MeetingsMutation
+        </a>
+      </li>
+      
+        
+      <li>
         <a href="/api/docs/object/milestone/" class="sidebar-link">
           Milestone
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/api/docs/object/moderation/" class="sidebar-link">
+          Moderation
         </a>
       </li>
       
@@ -944,6 +1002,13 @@
       
         
       <li>
+        <a href="/api/docs/object/participantdetails/" class="sidebar-link">
+          ParticipantDetails
+        </a>
+      </li>
+      
+        
+      <li>
         <a href="/api/docs/object/participatoryprocess/" class="sidebar-link">
           ParticipatoryProcess
         </a>
@@ -960,13 +1025,6 @@
       <li>
         <a href="/api/docs/object/participatoryprocessstep/" class="sidebar-link">
           ParticipatoryProcessStep
-        </a>
-      </li>
-      
-        
-      <li>
-        <a href="/api/docs/object/participatoryprocesstype/" class="sidebar-link">
-          ParticipatoryProcessType
         </a>
       </li>
       
@@ -1098,6 +1156,20 @@
       
         
       <li>
+        <a href="/api/docs/object/reportable/" class="sidebar-link">
+          Reportable
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/api/docs/object/reportableuser/" class="sidebar-link">
+          ReportableUser
+        </a>
+      </li>
+      
+        
+      <li>
         <a href="/api/docs/object/responseoption/" class="sidebar-link">
           ResponseOption
         </a>
@@ -1140,29 +1212,15 @@
       
         
       <li>
-        <a href="/api/docs/object/sortition/" class="sidebar-link">
-          Sortition
+        <a href="/api/docs/object/staticpage/" class="sidebar-link">
+          StaticPage
         </a>
       </li>
       
         
       <li>
-        <a href="/api/docs/object/sortitionconnection/" class="sidebar-link">
-          SortitionConnection
-        </a>
-      </li>
-      
-        
-      <li>
-        <a href="/api/docs/object/sortitionedge/" class="sidebar-link">
-          SortitionEdge
-        </a>
-      </li>
-      
-        
-      <li>
-        <a href="/api/docs/object/sortitions/" class="sidebar-link">
-          Sortitions
+        <a href="/api/docs/object/staticpagetopic/" class="sidebar-link">
+          StaticPageTopic
         </a>
       </li>
       
@@ -1233,6 +1291,13 @@
       <li>
         <a href="/api/docs/object/user/" class="sidebar-link">
           User
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/api/docs/object/usermoderation/" class="sidebar-link">
+          UserModeration
         </a>
       </li>
       
@@ -1469,6 +1534,41 @@
       
       
       <li>
+        <a href="/api/docs/enum/accessmodeenum/" class="sidebar-link">
+          AccessModeEnum
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/enum/iframeaccesslevelenum/" class="sidebar-link">
+          IframeAccessLevelEnum
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/enum/iframeembedtypeenum/" class="sidebar-link">
+          IframeEmbedTypeEnum
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/enum/registrationtypeenum/" class="sidebar-link">
+          RegistrationTypeEnum
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/enum/typeofmeetingenum/" class="sidebar-link">
+          TypeOfMeetingEnum
+        </a>
+      </li>
+      
+      
+      <li>
         <a href="/api/docs/enum/__directivelocation/" class="sidebar-link">
           __DirectiveLocation
         </a>
@@ -1511,8 +1611,43 @@
       
       
       <li>
+        <a href="/api/docs/input_object/answerproposalattributes/" class="sidebar-link">
+          AnswerProposalAttributes
+        </a>
+      </li>
+      
+      
+      <li>
         <a href="/api/docs/input_object/categoryfilter/" class="sidebar-link">
           CategoryFilter
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/input_object/closedebateattributes/" class="sidebar-link">
+          CloseDebateAttributes
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/input_object/closedebateinput/" class="sidebar-link">
+          CloseDebateInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/input_object/closemeetingattributes/" class="sidebar-link">
+          CloseMeetingAttributes
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/input_object/closemeetinginput/" class="sidebar-link">
+          CloseMeetingInput
         </a>
       </li>
       
@@ -1527,6 +1662,41 @@
       <li>
         <a href="/api/docs/input_object/componentsort/" class="sidebar-link">
           ComponentSort
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/input_object/createdebateinput/" class="sidebar-link">
+          CreateDebateInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/input_object/createmeetinginput/" class="sidebar-link">
+          CreateMeetingInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/input_object/createproposalinput/" class="sidebar-link">
+          CreateProposalInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/input_object/debateattributes/" class="sidebar-link">
+          DebateAttributes
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/input_object/meetingattributes/" class="sidebar-link">
+          MeetingAttributes
         </a>
       </li>
       
@@ -1581,6 +1751,34 @@
       
       
       <li>
+        <a href="/api/docs/input_object/unvoteproposalinput/" class="sidebar-link">
+          UnvoteProposalInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/input_object/updatedebateinput/" class="sidebar-link">
+          UpdateDebateInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/input_object/updatemeetinginput/" class="sidebar-link">
+          UpdateMeetingInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/input_object/updateproposalinput/" class="sidebar-link">
+          UpdateProposalInput
+        </a>
+      </li>
+      
+      
+      <li>
         <a href="/api/docs/input_object/userentityfilter/" class="sidebar-link">
           UserEntityFilter
         </a>
@@ -1590,6 +1788,27 @@
       <li>
         <a href="/api/docs/input_object/userentitysort/" class="sidebar-link">
           UserEntitySort
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/input_object/voteproposalinput/" class="sidebar-link">
+          VoteProposalInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/input_object/withdrawmeetinginput/" class="sidebar-link">
+          WithdrawMeetingInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/api/docs/input_object/withdrawproposalinput/" class="sidebar-link">
+          WithdrawProposalInput
         </a>
       </li>
       
