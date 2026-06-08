@@ -46,3 +46,5 @@ end
 
 group :production do
 end
+
+gem "faker", "~> 3.5"
