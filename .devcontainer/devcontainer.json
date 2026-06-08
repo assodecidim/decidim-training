@@ -1,5 +1,5 @@
 {
-  "name": "decidim-multipod",
+  "name": "decidim-training",
   "dockerComposeFile": "compose.yaml",
   "service": "rails-app",
   "workspaceFolder": "/workspaces/decidim",

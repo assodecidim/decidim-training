@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # Configuration
-CONTAINER_NAME="decidim-multipod-rails-app"
+CONTAINER_NAME="decidim-training-rails-app"
 SCRIPT_NAME=$(basename "$0")
-CONTAINERS_TO_STOP=("decidim-multipod-rails-app-1" "decidim-multipod-selenium-1" "decidim-multipod-postgres-1" "decidim-multipod-redis-1")
+CONTAINERS_TO_STOP=("decidim-training-rails-app-1" "decidim-training-selenium-1" "decidim-training-postgres-1" "decidim-training-redis-1")
 DEVCONTAINER_DIR=".devcontainer"
 DEVCONTAINER_JSON="$DEVCONTAINER_DIR/devcontainer.json"
 DEVCONTAINER_LOCAL_JSON="$DEVCONTAINER_DIR/devcontainer.local.json"

@@ -1,4 +1,4 @@
-name: "decidim-multipod"
+name: "decidim-training"
 
 services:
   rails-app:
